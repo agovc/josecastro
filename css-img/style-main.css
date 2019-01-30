@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+}
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+td a strong {
+  color: black;
+}
+#slideshow {
+    padding-top: 30px;
+    position: relative;
+    width: 700px;
+    height: 650px;
+    margin: auto;
+}
+
+#slideshow > div {
+    position: absolute;
+    z-index:-1;
+}
+#texto {
+	width: 800px;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+}
+#tabla {
+	margin: auto;
+}
+.footer {
+	width: 900px;
+	height: 20px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: #686868;
+	margin: 0 auto;
+}
+.home-img{
+  margin: auto;
+  display: block;
+}
+.home-img img {
+  width: 700px;
+}
+.one {
+	width: 900px;
+	height: 100px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#nav {
+	width: 500px;
+	height: 45px;
+	margin-left: 400px;
+	padding-top: 17.5px;
+}
+.logo {
+	width: 200px;
+	height: 80px;
+	background-image:url("logo.png");
+	background-repeat: no-repeat;
+	background-position:center;
+	float: left;
+	padding-left: 50px;
+}
+#line {
+	background-color: black;
+	width: 900px;
+	height: 1px;
+	margin: 0 auto;
+}
+.visibleNearby {
+	  min-width: 900px;
+	  min-height: 500px;
+}
