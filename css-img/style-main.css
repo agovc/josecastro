@@ -67,6 +67,7 @@ td a strong {
 }
 
 .gallery-image {
+	cursor: pointer;
 	width: 150px;
 	height: 150px;
 	margin: 2px;
