@@ -8,6 +8,20 @@ h1 {
 td a strong {
   color: black;
 }
+#slideshow {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	height: 600px;
+}	
+#slideshow > div {
+	position: absolute;
+    z-index:-1;
+}
+.bigger-img {
+	margin-top: 60px;
+	width: 900px !important;
+}
 #texto {
 	width: 800px;
 	margin: 0 auto;
@@ -23,6 +37,13 @@ td a strong {
 	font-family: 'Open Sans', sans-serif;
 	color: #686868;
 	margin: 0 auto;
+}
+.home-img{
+	margin: auto;
+	display: block;
+}
+.home-img img {
+	width: 700px;
 }
 .one {
 	width: 900px;

@@ -147,84 +147,356 @@
 
 
 
-
-		<div id="gallery-1" class="royalSlider rsDefault visibleNearby">
-			<a class="rsImg" href="obra/1-vp.jpg">El ángel exterminador<span>Óleo \ Tela 165 x 190 cm 2012</span></a>
-			<a class="rsImg" href="obra/2-vp.jpg">Lluvia<span>Acrílico \ Tela 115 x 150 cm 2008</span></a>
-		    <a class="rsImg" href="obra/3-vp.jpg">Detenimiento<span>Acrílico \ MDF 54 x 84 cm 2013</span></a>
-		    <a class="rsImg" href="obra/4-vp.jpg">Iluminada<span>Óleo \ Tela 160 x 200 cm 2009</span></a>
-		    <a class="rsImg" href="obra/5-vp.jpg">Ciudad en movimiento<span>Acrílico \ Tela 115 x 150 cm 1998</span></a>
-		    <a class="rsImg" href="obra/6-vp.jpg">Las Banderas<span>Óleo \ Tela 110 x 165 cm 1999</span></a>
-		    <a class="rsImg" href="obra/7-vp.jpg">Peatonal<span>Óleo \ Tela 110 x 165 cm 1999</span></a>
-		    <a class="rsImg" href="obra/8-vp.jpg">Ciudad obscura 1<span>Óleo \ Tela 110 x 120 cm 2008</span></a>
-		    <a class="rsImg" href="obra/9-vp.jpg">Ciudad obscura 3<span>Acrílico \ Tela 110 x 120 cm 2009</span></a>
-		    <a class="rsImg" href="obra/10-vp.jpg">Ciudad obscura 2<span>Óleo \ Tela 110 x 120 cm 2009</span></a>
-		    <a class="rsImg" href="obra/11-vp.jpg">El cofre<span>Acrílico \ Tela 110 x 120 cm 2009</span></a>
-		    <a class="rsImg" href="obra/12-vp.jpg">En camino<span>Óleo \ Madera 70 x 110 cm 2002</span></a>
-		    <a class="rsImg" href="obra/13-vp.jpg">La orilla<span>Óleo y encausto \ Tela 80 x 100 cm</span></a>
-		    <a class="rsImg" href="obra/14-vp.jpg">Paisaje descompuesto<span>Acrílico \ Tela 100 x 130 cm 2005</span></a>
-		    <a class="rsImg" href="obra/15-vp.jpg">El algodonero<span>Óleo \ Aluminio 77 x 103 cm 2006</span></a>
-		    <a class="rsImg" href="obra/16-vp.jpg">Palacio<span>Acrílico \ Tela  110 x 120 cm 2010</span></a>
-		    <a class="rsImg" href="obra/17-vp.jpg">Avenida<span>Óleo \ Tela 50 x 60 cm 2001</span></a>
-		    <a class="rsImg" href="obra/18-vp.jpg">Escenario céntrico<span>Óleo \ Tela 160 x 190 cm 2010</span></a>
-		    <a class="rsImg" href="obra/19-vp.jpg">Paisaje con signo<span>Óleo \ Tela 180 x 200 cm 2010</span></a>
-		    <a class="rsImg" href="obra/20-vp.jpg">Terminal<span>Óleo \ Tela 110 x 120 cm 2009</span></a>
-		    <a class="rsImg" href="obra/21-vp.jpg">La espera<span>Acrílico \ Tela y madera 110 x 135 cm 2005</span></a>
-		    <a class="rsImg" href="obra/22-vp.jpg">Escenario azul<span>Óleo \ Tela 150 x 180 cm 1999</span></a>
-		    <a class="rsImg" href="obra/23-vp.jpg">Perspectiva 1<span>Acrílico \ Tela 135 x 165 cm 2005</span></a>
-		    <a class="rsImg" href="obra/24-vp.jpg">Perspectiva<span>Acrílico \ Tela 100 x 130 cm 2005</span></a>
-		    <a class="rsImg" href="obra/25-vp.jpg">Multitud<span>Acrílico \ Tela 110 x 135 cm 2004</span></a>
-		    <a class="rsImg" href="obra/26-vp.jpg">Los atendientes<span>Acrílico \ MDF 54 x 84 cm 2013</span></a>
-		    <a class="rsImg" href="obra/27-vp.jpg">Escena en tres tiempos<span>Acrílico \ Tela 100 x 150 cm</span></a>
-		    <a class="rsImg" href="obra/28-vp.jpg">Art fair<span>Acrílico y óleo \ Tela 100 x 130 cm 2012</span></a>
-		    <a class="rsImg" href="obra/29-vp.jpg">Escena con bandera<span>Óleo \ Tela 100 x 150 2009</span></a>
-		    <a class="rsImg" href="obra/30-vp.jpg">Paisaje fragmentado 1<span>Óleo \ Tela 110 x 165 1999</span></a>
-		    <a class="rsImg" href="obra/31-vp.jpg">Sin título<span>Acrílico \ Madera (duela tratada) 156 x 222 cm 2011</span></a>
-		    <a class="rsImg" href="obra/32-vp.jpg">La marcha<span>Acrílico \ Madera (duela tratada) 156 x 222 cm 2013</span></a>
-		    <a class="rsImg" href="obra/33-vp.jpg">Estación<span>Óleo | Tela 125 x 165 cm 2013</span></a>
-  		</div>
-
+		  <div class="flex-container">
+			<div onclick="generateModal('modal-1')" class="gallery-image">
+				<img src="obra/1-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-1')" id="modal-1" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/1-vp.jpg" alt="">
+					<p>El ángel exterminador</p>
+					<span>Óleo \ Tela 165 x 190 cm 2012</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-2')" class="gallery-image">
+				<img src="obra/2-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-2')" id="modal-2" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/2-vp.jpg" alt="">
+					<p>Lluvia</p>
+					<span>Acrílico \ Tela 115 x 150 cm 2008</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-3')" class="gallery-image">
+				<img src="obra/3-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-3')" id="modal-3" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/3-vp.jpg" alt="">
+					<p>Detenimiento</p>
+					<span>Acrílico \ MDF 54 x 84 cm 2013</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-4')" class="gallery-image">
+				<img src="obra/4-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-4')" id="modal-4" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/4-vp.jpg" alt="">
+					<p>Iluminada</p>
+					<span>Óleo \ Tela 160 x 200 cm 2009</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-5')" class="gallery-image">
+				<img src="obra/5-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-5')" id="modal-5" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/5-vp.jpg" alt="">
+					<p>Ciudad en movimiento</p>
+					<span>Acrílico \ Tela 115 x 150 cm 1998</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-6')" class="gallery-image">
+				<img src="obra/6-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-6')" id="modal-6" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/6-vp.jpg" alt="">
+					<p>Las Banderas</p>
+					<span>Óleo \ Tela 110 x 165 cm 1999</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-7')" class="gallery-image">
+				<img src="obra/7-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-7')" id="modal-7" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/7-vp.jpg" alt="">
+					<p>Peatonal</p>
+					<span>Óleo \ Tela 110 x 165 cm 1999</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-8')" class="gallery-image">
+				<img src="obra/8-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-8')" id="modal-8" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/8-vp.jpg" alt="">
+					<p>Ciudad obscura 1</p>
+					<span>Óleo \ Tela 110 x 120 cm 2008</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-9')" class="gallery-image">
+				<img src="obra/9-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-9')" id="modal-9" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/9-vp.jpg" alt="">
+					<p>Ciudad obscura 2</p>
+					<span>Óleo \ Tela 110 x 120 cm 2009</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-10')" class="gallery-image">
+				<img src="obra/10-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-10')" id="modal-10" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/10-vp.jpg" alt="">
+					<p>Ciudad obscura 3</p>
+					<span>Acrílico \ Tela 110 x 120 cm 2009</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-11')" class="gallery-image">
+				<img src="obra/11-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-11')" id="modal-11" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/11-vp.jpg" alt="">
+					<p>El cofre</p>
+					<span>Acrílico \ Tela 110 x 120 cm 2009</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-12')" class="gallery-image">
+				<img src="obra/12-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-12')" id="modal-12" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/12-vp.jpg" alt="">
+					<p>En camino</p>
+					<span>Óleo \ Madera 70 x 110 cm 2002</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-13')" class="gallery-image">
+				<img src="obra/13-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-13')" id="modal-13" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/13-vp.jpg" alt="">
+					<p>La orilla</p>
+					<span>Óleo y encausto \ Tela 80 x 100 cm</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-14')" class="gallery-image">
+				<img src="obra/14-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-14')" id="modal-14" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/14-vp.jpg" alt="">
+					<p>Paisaje descompuesto</p>
+					<span>Acrílico \ Tela 100 x 130 cm 2005</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-15')" class="gallery-image">
+				<img src="obra/15-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-15')" id="modal-15" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/15-vp.jpg" alt="">
+					<p>El algodonero</p>
+					<span>Óleo \ Aluminio 77 x 103 cm 2006</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-16')" class="gallery-image">
+				<img src="obra/16-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-16')" id="modal-16" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/16-vp.jpg" alt="">
+					<p>Palacio</p>
+					<span>Acrílico \ Tela  110 x 120 cm 2010</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-17')" class="gallery-image">
+				<img src="obra/17-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-17')" id="modal-17" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/17-vp.jpg" alt="">
+					<p>Avenida</p>
+					<span>Óleo \ Tela 50 x 60 cm 2001</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-18')" class="gallery-image">
+				<img src="obra/18-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-18')" id="modal-18" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/18-vp.jpg" alt="">
+					<p>Escenario céntrico</p>
+					<span>Óleo \ Tela 160 x 190 cm 2010</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-19')" class="gallery-image">
+				<img src="obra/19-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-19')" id="modal-19" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/19-vp.jpg" alt="">
+					<p>Paisaje con signo</p>
+					<span>Óleo \ Tela 180 x 200 cm 2010</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-20')" class="gallery-image">
+				<img src="obra/20-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-20')" id="modal-20" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/20-vp.jpg" alt="">
+					<p>Terminal</p>
+					<span>Óleo \ Tela 110 x 120 cm 2009</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-21')" class="gallery-image">
+				<img src="obra/21-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-21')" id="modal-21" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/21-vp.jpg" alt="">
+					<p>La espera</p>
+					<span>Acrílico \ Tela y madera 110 x 135 cm 2005</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-22')" class="gallery-image">
+				<img src="obra/22-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-22')" id="modal-22" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/22-vp.jpg" alt="">
+					<p>Escenario azul</p>
+					<span>Óleo \ Tela 150 x 180 cm 1999</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-23')" class="gallery-image">
+				<img src="obra/23-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-23')" id="modal-23" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/23-vp.jpg" alt="">
+					<p>Perspectiva 1</p>
+					<span>Acrílico \ Tela 135 x 165 cm 2005</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-24')" class="gallery-image">
+				<img src="obra/24-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-24')" id="modal-24" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/24-vp.jpg" alt="">
+					<p>Perspectiva 2</p>
+					<span>Acrílico \ Tela 100 x 130 cm 2005</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-25')" class="gallery-image">
+				<img src="obra/25-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-25')" id="modal-25" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/25-vp.jpg" alt="">
+					<p>Multitud</p>
+					<span>Acrílico \ Tela 110 x 135 cm 2004</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-26')" class="gallery-image">
+				<img src="obra/26-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-26')" id="modal-26" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/26-vp.jpg" alt="">
+					<p>Los atendientes</p>
+					<span>Acrílico \ MDF 54 x 84 cm 2013</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-27')" class="gallery-image">
+				<img src="obra/27-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-27')" id="modal-27" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/27-vp.jpg" alt="">
+					<p>Escena en tres tiempos</p>
+					<span>Acrílico \ Tela 100 x 150 cm</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-28')" class="gallery-image">
+				<img src="obra/16-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-28')" id="modal-28" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/28-vp.jpg" alt="">
+					<p>Art fair</p>
+					<span>Acrílico y óleo \ Tela 100 x 130 cm 2012</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-29')" class="gallery-image">
+				<img src="obra/29-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-29')" id="modal-29" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/29-vp.jpg" alt="">
+					<p>Escena con bandera</p>
+					<span>Óleo \ Tela 100 x 150 2009</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-30')" class="gallery-image">
+				<img src="obra/30-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-30')" id="modal-30" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/30-vp.jpg" alt="">
+					<p>Paisaje fragmentado 1</p>
+					<span>Óleo \ Tela 110 x 165 1999</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-31')" class="gallery-image">
+				<img src="obra/31-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-31')" id="modal-31" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/31-vp.jpg" alt="">
+					<p>Sin título</p>
+					<span>Acrílico \ Madera (duela tratada) 156 x 222 cm 2011</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-32')" class="gallery-image">
+				<img src="obra/32-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-32')" id="modal-32" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/32-vp.jpg" alt="">
+					<p>La marcha</p>
+					<span>Acrílico \ Madera (duela tratada) 156 x 222 cm 2013</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-33')" class="gallery-image">
+				<img src="obra/33-vp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-33')" id="modal-33" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/33-vp.jpg" alt="">
+					<p>Estación</p>
+					<span>Óleo \ Tela 125 x 165 cm 2013</span>
+				</div>
+			</div>
+		</div>
 
   		<div class="footer"><p>Derechos reservados ® Jos&#233; Castro Le&#241;ero <script type="text/javascript">document.write(new Date().getFullYear());</script></p></div>
 
 
 
-		<script id="addJS">// Important note! If you're adding CSS3 transition to slides, fadeInLoadedSlide should be disabled to avoid fade-conflicts.
-			jQuery(document).ready(function($) {
-			  var si = $('#gallery-1').royalSlider({
-			    addActiveClass: true,
-			    arrowsNav: false,
-			    controlNavigation: 'none',
-			    autoScaleSlider: true,
-			    autoScaleSliderWidth: 960,
-			    autoScaleSliderHeight: 340,
-			    loop: true,
-			    fadeinLoadedSlide: false,
-			    globalCaption: true,
-			    keyboardNavEnabled: true,
-			    globalCaptionInside: false,
-
-			    visibleNearby: {
-			      enabled: true,
-			      centerArea: 0.5,
-			      center: true,
-			      breakpoint: 650,
-			      breakpointCenterArea: 0.64,
-			      navigateByCenterClick: true
-			    }
-			  }).data('royalSlider');
-
-			  // link to fifth slide from slider description.
-			  $('.slide4link').click(function(e) {
-			    si.goTo(4);
-			    return false;
-			  });
-			});
-
+		  <script id="addJS">// Important note! If you're adding CSS3 transition to slides, fadeInLoadedSlide should be disabled to avoid fade-conflicts.
+			function generateModal(modalId) {
+			document.getElementById(modalId).classList.add("display-block");
+			}
+	
+			function closeModal(modalId) {
+				document.getElementById(modalId).classList.remove("display-block");
+			}
+	
 			$(document).ready(function(){
-		    // show in page load
-		    $('.two').css("display", "none");
-		    $('.two').show(1000);
+			// show in page load
+			$('.two').css("display", "none");
+			$('.two').show(1000);
 		})
 		</script>
 	</body>

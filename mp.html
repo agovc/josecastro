@@ -140,60 +140,96 @@
 	      </ul>
 	   </div> <!--obra-cssmenu-->
 
-
-
-
-		<div id="gallery-1" class="royalSlider rsDefault visibleNearby">
-			<a class="rsImg" href="obra/1-mp.jpg">Mercadillo<span>Acrílico \ Tela 120 x 135 cm 2011</span></a>
-		    <a class="rsImg" href="obra/2-mp.jpg">La iluminada 1<span>Óleo \ Tela 110 x 150 cm 2009</span></a>
-		    <a class="rsImg" href="obra/3-mp.jpg">La iluminada 2<span>Óleo \ Tela 110 x 165 cm 2009</span></a>
-		    <a class="rsImg" href="obra/4-mp.jpg">Umbral 2<span>Óleo \ Tela 125 x 165 cm 2013</span></a>
-		    <a class="rsImg" href="obra/5-mp.jpg">El mensaje<span>Óleo \ Lino 94 x 133 cm 2013</span></a>
-		    <a class="rsImg" href="obra/6-mp.jpg">México<span>Óleo \ Tela 160 x 200 cm 2010</span></a>
-		    <a class="rsImg" href="obra/7-mp.jpg">Umbral<span>Óleo \ Tela 99 x 136 cm 2012</span></a>
-  		</div>
-
+		  <div class="flex-container">
+			<div onclick="generateModal('modal-1')" class="gallery-image">
+				<img src="obra/1-mp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-1')" id="modal-1" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/1-mp.jpg" alt="">
+					<p>Mercadillo</p>
+					<span>Acrílico \ Tela 120 x 135 cm 2011</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-2')" class="gallery-image">
+				<img src="obra/2-mp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-2')" id="modal-2" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/2-mp.jpg" alt="">
+					<p>La iluminada 1</p>
+					<span>Óleo \ Tela 110 x 150 cm 2009</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-3')" class="gallery-image">
+				<img src="obra/3-mp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-3')" id="modal-3" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/3-mp.jpg" alt="">
+					<p>La iluminada 2</p>
+					<span>Óleo \ Tela 110 x 165 cm 2009</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-4')" class="gallery-image">
+				<img src="obra/4-mp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-4')" id="modal-4" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/4-mp.jpg" alt="">
+					<p>Umbral 2</p>
+					<span>Óleo \ Tela 125 x 165 cm 2013</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-5')" class="gallery-image">
+				<img src="obra/5-mp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-5')" id="modal-5" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/5-mp.jpg" alt="">
+					<p>El mensaje</p>
+					<span>Óleo \ Lino 94 x 133 cm 2013</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-6')" class="gallery-image">
+				<img src="obra/6-mp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-6')" id="modal-6" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/6-mp.jpg" alt="">
+					<p>México</p>
+					<span>Óleo \ Tela 160 x 200 cm 2010</span>
+				</div>
+			</div>
+			<div onclick="generateModal('modal-7')" class="gallery-image">
+				<img src="obra/7-mp.jpg" alt="">
+			</div>
+			<div onclick="closeModal('modal-7')" id="modal-7" class="modal-background">
+				<div class="modal">
+					<img class="modal-img" src="obra/7-mp.jpg" alt="">
+					<p>Umbral</p>
+					<span>Óleo \ Tela 99 x 136 cm 2012</span>
+				</div>
+			</div>
+		</div>
 
   		<div class="footer"><p>Derechos reservados ® Jos&#233; Castro Le&#241;ero <script type="text/javascript">document.write(new Date().getFullYear());</script></p></div>
 
 
 
-		<script id="addJS">// Important note! If you're adding CSS3 transition to slides, fadeInLoadedSlide should be disabled to avoid fade-conflicts.
-			jQuery(document).ready(function($) {
-			  var si = $('#gallery-1').royalSlider({
-			    addActiveClass: true,
-			    arrowsNav: false,
-			    controlNavigation: 'none',
-			    autoScaleSlider: true,
-			    autoScaleSliderWidth: 960,
-			    autoScaleSliderHeight: 340,
-			    loop: true,
-			    fadeinLoadedSlide: false,
-			    globalCaption: true,
-			    keyboardNavEnabled: true,
-			    globalCaptionInside: false,
-
-			    visibleNearby: {
-			      enabled: true,
-			      centerArea: 0.5,
-			      center: true,
-			      breakpoint: 650,
-			      breakpointCenterArea: 0.64,
-			      navigateByCenterClick: true
-			    }
-			  }).data('royalSlider');
-
-			  // link to fifth slide from slider description.
-			  $('.slide4link').click(function(e) {
-			    si.goTo(4);
-			    return false;
-			  });
-			});
-
+		  <script id="addJS">// Important note! If you're adding CSS3 transition to slides, fadeInLoadedSlide should be disabled to avoid fade-conflicts.
+			function generateModal(modalId) {
+			document.getElementById(modalId).classList.add("display-block");
+			}
+	
+			function closeModal(modalId) {
+				document.getElementById(modalId).classList.remove("display-block");
+			}
+	
 			$(document).ready(function(){
-		    // show in page load
-		    $('.two').css("display", "none");
-		    $('.two').show(1000);
+			// show in page load
+			$('.two').css("display", "none");
+			$('.two').show(1000);
 		})
 		</script>
 	</body>
